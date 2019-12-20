@@ -1,0 +1,23 @@
+
+<head>
+    <h1>Enter the Bank Info: </h1>
+</head>
+
+<body id='bank_new_form'>
+    <%= form_for @bank do |f|  %>
+    <%= f.label :bank_name, 'Name of the Bank: ' %>
+    <%= f.text_field :bank_name %>
+    <br>
+    <%= f.label :bank_location, 'Location: ' %>
+    <%= f.text_field :bank_location %>
+    <br>
+    <%= f.label :staff_count, 'Staff Count: ' %>
+    <%= f.text_field :staff_count %>
+    <br>
+    <%= f.label :year_founded, 'Founded year: ' %>
+    <%= f.text_field :year_founded %>
+    <br>
+    <%= f.submit 'Submit New Bank' %>
+    <% end %>
+    
+</body>

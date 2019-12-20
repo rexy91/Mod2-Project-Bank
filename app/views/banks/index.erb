@@ -1,0 +1,15 @@
+<head>
+
+    <h1>Here are all the Banks</h1>
+
+</head>
+<body>
+
+        <% @banks.each do |bank| %>
+       <li style='font-size: 140%'>  <%= link_to bank.bank_name, bank_path(bank.id) %> </li>
+       <br>
+
+        <% end %>
+
+    <%= link_to "Enter New Bank", new_bank_path%>
+</body>

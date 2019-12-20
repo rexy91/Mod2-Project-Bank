@@ -1,0 +1,29 @@
+<head>
+<header>
+        <h2><%= @succeed %></h2>
+        <h1 style='text-align:center'>Welcome to <span style='color:purple; font-family: verdana; font-size : 130%'> <%= @bank.bank_name %> </span> </h1>
+</header>
+<nav style='background-color:white; padding: 10px'>
+<p style='text-align:center'>Slogan</p>
+</nav>
+</head>
+
+
+<body style='background-color: #E1D7D7'>
+    <p>Location: <%= @bank.bank_location %></p>
+    <hr>
+    <p>Staff Count: <%= @bank.staff_count %></p>
+    <hr>
+    <p>Year Founded: <%= @bank.year_founded %></p>
+    <%= button_to 'Delete Bank', @bank, method: :delete %>
+    <br>
+<div>
+    <%= button_to 'Register Account' %>
+</div>
+   
+</body>
+
+<footer style='margin-top:330px; text-align:center'>
+     <%= link_to 'Home Page', banks_path %>
+</footer>
+
